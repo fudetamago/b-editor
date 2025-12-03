@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Bエディター</title>
+
+  <!-- オリジナルCSS -->
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/fudetamago/b-editor/refs/heads/main/editor.css">
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/fudetamago/b-editor/refs/heads/main/prev.css">
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/fudetamago/b-editor/refs/heads/main/tab.css">
+  <link rel="stylesheet" href="https://raw.githubusercontent.com/fudetamago/b-editor/refs/heads/main/reset.css">
+  <link href="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+
+  <!-- アイコン -->
+  <link rel="icon" type="image/x-icon" href="/wp-content/uploads/2020/11/b_icon.png">
+  <link rel="shortcut icon" href="/wp-content/uploads/2020/11/b_icon.png" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/wp-content/uploads/2020/11/b_icon.png" sizes="180x180">
+  <link rel="icon" type="image/png" href="/wp-content/uploads/2020/11/b_icon.png" sizes="192x192">
+</head>
+
+<body class="hold-transition fixed skin-blue-light sidebar-mini ">
+
+  <header>
+    <h1><span class="B">B</span>エディター</h1>
+    <p>HTMLコード を整形して &lt;p&gt;タグ を除去するエディター（<a href="https://blogger-learning-rab.blogspot.com/2020/11/b-editor.html" target="_blank">説明</a>）</p>
+    <hr/>
+  </header>
+
+  <div class="wrapper">
+    <div class="tabs">
+
+      <input id="all" type="radio" name="tab_item" checked>
+      <label class="tab_item" for="all">エディター</label>
+      <input id="programming" type="radio" name="tab_item">
+      <label class="tab_item" for="programming">プレビュー</label>
+
+      <div class="tab_content" id="all_content">
+        <div class="edit-area">
+          <div class="write">
+            <textarea id="contents"></textarea>
+          </div>
+          <input id="change" class="button" type="button" value="変 換">
+          <div class="read">
+            <textarea id="output"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <div class="tab_content" id="programming_content">
+        <div class="preview-area" id="preview"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <hr/>
+    <p>Powered by <a href="https://summernote.org/" target="_blank">Summernote</a><br/>
+      Developed by fudetamago 2020</p>
+  </footer>
+
+  <!-- オリジナルJS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/lang/summernote-ja-JP.js"></script>
+  <script src="/b-editor/js/script.js"></script>
+  <link rel="stylesheet" href="/b-editor/css/add.css">
+
+</body>
+</html>
