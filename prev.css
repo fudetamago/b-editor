@@ -1,0 +1,123 @@
+/* 見出しスタイル（h2） */
+
+.preview-area h2 {
+  border-left: solid 4px #0078ba;
+  background: #f5f5f5;
+  color: #333;
+  font-size: 20px;
+  padding: 10px;
+  margin: 0;
+}
+
+/* 見出しスタイル（h3） */
+
+.preview-area h3 {
+  border-left: solid 4px #0078ba;
+  border-bottom: solid 1px #0078ba;
+  font-size: 18px;
+  color: #333;
+  padding: 6px 10px;
+  margin:0;
+}
+
+/* 見出しスタイル（h4） */
+
+.preview-area h4 {
+  border-left: solid 4px #0078ba;
+  font-size: 16px;
+  color: #333;
+  padding: 3px 10px;
+  margin: 0;
+}
+
+/* 見出しスタイル（h5） */
+
+.preview-area h5 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+/* 見出しスタイル（h6） */
+
+.preview-area h6 {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+/* プレビュー領域（フォント・行間など） */
+
+.preview-area {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  letter-spacing: 2px;
+  line-height: 1.8em;
+  padding: 10px 20px 0;
+  overflow: hidden;
+}
+
+/* 段落（p） */
+
+.preview-area p {
+  margin: 0;
+}
+
+/* 引用（blockquote） */
+blockquote {
+  position: relative;
+  background: #fafafa;
+  padding: 30px;
+  margin: 10px 15px;
+}
+
+blockquote::before {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10d";
+  font-size: 18px;
+  color: #ddd;
+}
+
+blockquote::after {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10e";
+  font-size: 18px;
+  color: #ddd;
+}
+
+blockquote p {
+  padding: 0;
+  margin: 0;
+}
+
+/* 箇条書き（ul） */
+.preview-area ul li {
+  margin-left: 30px;
+}
+
+.preview-area ul {
+  padding-left: 0;
+  margin-left: 1.5em;
+}
+
+/* 番号付きリスト（ol） */
+.preview-area ol li {
+  margin-left: 30px;
+  padding: 0;
+}
+
+.preview-area ol {
+  padding-left: 0;
+  margin-left: 1.8em;
+}

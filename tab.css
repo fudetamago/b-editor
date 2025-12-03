@@ -1,0 +1,84 @@
+.tabs {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 690px;
+}
+
+.tab_item {
+  width: calc(100%/2);
+  height: 50px;
+  border-bottom: 3px solid #333;
+  background-color: #d9d9d9;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #565656;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.tab_item:hover {
+  opacity: 0.75;
+}
+
+/* タブ全体のスタイル */
+
+.tabs {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  height: 690px;
+}
+
+/* タブ項目（.tab_item）のスタイル */
+
+.tab_item {
+  width: calc(100%/2);
+  height: 50px;
+  border-bottom: 3px solid #333;
+  background-color: #d9d9d9;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #565656;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+}
+
+.tab_item:hover {
+  opacity: 0.75;
+}
+
+/* タブ切替用input（ラジオボタン等） — 非表示 */
+
+input[name="tab_item"] {
+  display: none;
+}
+
+/* タブコンテンツ（内容領域） */
+
+.tab_content {
+  display: none;
+  /* padding: 10px 10px 0; */
+  clear: both;
+  overflow: hidden;
+}
+
+/* 選択されたタブのコンテンツを表示 */
+
+#all:checked~#all_content, #programming:checked~#programming_content, #design:checked~#design_content {
+  display: block;
+}
+
+/* 選択されたタブ項目（アクティブ）のスタイル */
+.tabs input:checked+.tab_item {
+  background-color: #333;
+  color: #fff;
+}
